@@ -1,1 +1,1 @@
-# SoLucky-Vercel
+# solucky
