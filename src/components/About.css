@@ -1,0 +1,284 @@
+.about-page{
+    width: 100vw;
+    aspect-ratio: 1728/7829;
+    background-image: url('/public/Assets/About/about-bg.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center top;
+    overflow: hidden;
+    position: relative;
+}
+
+.about-section-wrapper{
+    display: flex;
+    flex-direction: column;
+    width: 95vw;
+    margin: auto auto;
+}
+
+.founder-section{
+    position: absolute;
+    top: 6.5%;
+    left: 7%;
+}
+
+.brand-section{
+    position: absolute;
+    top: 47%;
+    right: 7%;
+}
+
+.camera-section{
+    position: absolute;
+    top: 77%;
+}
+
+.story-section{
+    position: absolute;
+    top: 84.3%;
+    right: 7%;
+}
+
+.message-container{
+    display: inline-flex;
+    padding: 45.714px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    width: 600px;
+    height: fit-content;
+    text-align: left;
+}
+
+.message-container h1{
+    color: #F5F5F5;
+    font-size: 100px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    align-self: flex-start;
+}
+
+#founder-message{
+    background: #587023;
+
+}
+
+#brand-message{
+    background: #185277;
+}
+
+#story-message{
+    background: #812F2C;
+    align-self: end;
+
+}
+
+.message-container p{
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.camera-button {
+    background: transparent;
+    border: none;
+    padding: 0;
+    margin: 0;
+    cursor: pointer;
+    display: inline-block;
+    width: 45vw;
+    z-index: 999;
+}
+
+.camera-picture{
+    display: block;
+    width: 45vw;
+    height: auto;
+}
+
+.camera-container{
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+}
+
+.camera-caption{
+    width: 29vw;
+    margin-top: -80px;
+    margin-left: 65px;
+}
+
+.signoff-message{
+    padding: 22.857px 51.429px 22.857px 34.286px;
+    width: fit-content;
+    background: #6D4F27;
+    position: absolute;
+    top: 97.5%;
+    left: 9.3%;
+}
+
+.signoff-message p{
+    color: #F5F5F5;
+    font-family: "Oooh Baby";
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom:0px;
+    margin-top: 0px;
+}
+
+.about-page .footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+  }
+
+
+@media screen and (max-width:1512px){
+    .message-container h1{
+        font-size: 85px;
+    }
+
+    .message-container p{
+        font-size: 25px;
+    }
+
+    .message-container{
+        width: 527px;
+    }
+
+    .signoff-message p{
+        font-size: 45px;
+    }
+}
+
+@media screen and (max-width:1320px){
+    .message-container h1{
+        font-size: 74px;
+    }
+
+    .message-container p{
+        font-size: 21px;
+    }
+
+    .message-container{
+        width: 460px;
+        padding: 34px;
+    }
+
+    .signoff-message p{
+        font-size: 40px;
+    }
+}
+
+
+@media screen and (max-width:1180px){
+    .message-container h1{
+        font-size: 66px;
+    }
+
+    .message-container p{
+        font-size: 18.5px;
+    }
+
+    .message-container{
+        width: 460px;
+        padding: 30px;
+    }
+
+    .signoff-message p{
+        font-size: 35px;
+    }
+
+    .camera-caption{
+        margin-top: -50px;
+        margin-left: 50px;
+    }
+}
+
+@media screen and (max-width:1080px){
+    .message-container h1{
+        font-size: 58px;
+    }
+
+    .message-container p{
+        font-size: 20px;
+    }
+
+    .message-container{
+        width: 644px;
+        padding: 20px;
+    }
+
+    .signoff-message p{
+        font-size: 32px;
+    }
+
+    .founder-section,.brand-section,.story-section,.signoff-message{
+        justify-self: anchor-center;
+        left: 0%;
+        right: 0%;
+    }
+}
+
+
+@media screen and (max-width: 744px) {
+    .message-container{
+        width: 86vw;
+        padding: 16px;
+    }
+
+    .story-section{
+        top: 86.3%;
+    }
+
+    .signoff-message{
+        top: 96.5%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .about-page {
+        aspect-ratio: 5/58;
+        background-image: url('/public/Assets/About/about-bg-mobile.png');
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        background-position: center top;
+        overflow: hidden;
+        position: relative;
+    }
+
+    .story-section{
+        top: 82.3%;
+    }
+
+    .brand-section{
+        top: 53%;
+    }
+
+    .signoff-message{
+        top: 96.5%;
+        width: 70vw;
+    }
+
+    .camera-section{
+        top: 75%;
+    }
+
+    .camera-button{
+        width: 85vw;
+    }
+
+    .camera-picture{
+        width: 85vw;
+    }
+
+    .camera-caption{
+        width: 60vw;
+    }
+}

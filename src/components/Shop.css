@@ -1,0 +1,493 @@
+.shop-page{
+    background-color:rgb(231,230,228);
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-x: hidden;
+    padding-top: 120px;
+}
+
+.shop-link-div{
+    display:flex;
+    flex-direction: column;
+    max-width: 700px;
+    align-items: center;
+    gap: 30px;
+    min-width: 530px;
+    z-index: 999;
+}
+
+.shop-title-wrapper{
+    display: flex;
+    gap: 20px;
+}
+
+.shop-link-title{
+    color: #8E0000;
+    text-align: center;
+    font-family: "PT Serif";
+    font-size: 55px;
+    font-style: italic;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 3.9px;
+    text-transform: lowercase;
+    margin-top:0px;
+    margin-bottom: 0px;
+}
+
+.shop-link-button{
+    border-radius: 35px;
+    background: #030303;
+    display: flex;
+    padding: 20px 30px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    min-width: 585px;
+    display:flex;
+    cursor: pointer;
+}
+
+.shop-link-button-text{
+    color: #F5F5F5;
+    text-align: center;
+    font-family: "Bai Jamjuree";
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: lowercase;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+
+.top-shop-div{
+    display:flex;
+    flex-direction: column;
+    width: 95vw;
+    height: fit-content;
+    padding-top: 272px;
+    margin-bottom: 82px;
+}
+
+.big-cutout-picture{
+    width: 70vw;
+}
+
+.alt-cutout-picture{
+    display: none;
+}
+
+.cutout-image-wrapper{
+    display: flex;
+    justify-content: end;
+    margin-top:-150px;
+}
+
+.cutout-gallery-wrapper{
+    display: flex;
+    flex-direction: column;
+    margin-top: -200px;
+}
+
+.annotation-container{
+    display: flex;
+}
+
+.photographer-tag{
+    padding: 0px 50px;
+}
+
+.horizontal-scroll-section {
+    display: flex;
+    gap: 53px; /* Space between cards */
+    overflow-x: auto; /* Enable horizontal scrolling */
+    padding: 10px;
+    scroll-behavior: smooth;
+    width:100vw;
+    margin: 0 auto; /* Center horizontally */
+}
+
+.horizontal-scroll-section-noscroll{
+    display: flex;
+    gap:20px;
+    justify-content: center;
+}
+
+.horizontal-scroll-section::-webkit-scrollbar {
+    display: none; /* hides scrollbar */
+}
+
+.cutout-item{
+    width: 189.903px;
+    height: 450px;
+    flex-shrink: 0;
+    padding-left: 23px;
+    padding-right: 22px;
+}
+
+.shop-info{
+    padding-top: 100px;
+    width:85vw;
+    display: flex;
+    flex-direction: column;
+}
+
+.shop-link{
+    align-self: end;
+    padding-bottom: 30px;
+}
+
+.shop-header-div{
+    text-align: start;
+}
+
+.info-button-div{
+    display:flex;
+    justify-content: space-between;
+}
+
+.shop-info-header-text.smaller-header{
+    color: #8E0000;
+    font-family: "PT Serif";
+    font-size: 65px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 3.9px;
+}
+
+.shop-info-header-text.bigger-header{
+    color: #8E0000;
+    font-family: "PT Serif";
+    font-size: 150px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 9px;
+    margin-top: -60px;
+}
+
+.shop-link-button.smaller-button{
+    width: 216px;
+    border-radius: 35px;
+    background: #030303;
+    display: flex;
+    padding: 20px 30px;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    min-width: 152px;
+    cursor: pointer;
+}
+
+.shop-info-para{
+    color: #030303;
+    text-align: justify;
+    font-family: "Bai Jamjuree";
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-indent: 65px;
+}
+
+.shop-info-para-bold{
+    color: #030303;
+    text-align: justify;
+    font-family: "Bai Jamjuree";
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.shop-info-para-italic{
+    color: #030303;
+    text-align: justify;
+    font-family: "Bai Jamjuree";
+    font-size: 25px;
+    font-style: italic;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.final-sale-cap1{
+    color: #030303;
+    font-family: "PT Serif";
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 1.5px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.final-sale-cap2{
+    color: #030303;
+    font-family: "PT Serif";
+    font-size: 80px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 4.8px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.final-sale-cap3{
+    color: #030303;
+    font-family: "PT Serif";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 1.08px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.sales-final-message{
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    text-align: end;
+}
+
+.cloth-pile-image{
+    margin-top: -120px;
+    width: 100vw;
+    height: auto;
+    align-self: center;
+}
+
+@media screen and (max-width: 1210px) {
+    .shop-info-header-text.bigger-header{
+        font-size: 130px;
+    }
+
+    .shop-info-header-text.smaller-header{
+        font-size: 55px;
+    }
+}
+
+@media screen and (max-width:1080px){
+    .shop-info-header-text.bigger-header{
+        font-size: 100px;
+    }
+
+    .shop-info-header-text.smaller-header{
+        font-size: 45px;
+    }
+
+    .big-cutout-picture{
+        display: none;
+    }
+
+    .alt-cutout-picture{
+        display: block;
+        margin-top: 100px;
+        width: 40vw;
+    }
+
+    .top-shop-div{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .shop-title-wrapper{
+        flex-direction: column;
+        gap: 0px;
+        width: 45vw;
+    }
+
+    .cutout-gallery-wrapper{
+        margin-top: -50px;
+    }
+
+    .photographer-tag{
+        width: 45vw;
+    }
+
+    #solucky-title{
+        align-self: flex-start;
+    }
+
+    #wardrobe-title{
+        align-self: flex-end;
+    }
+
+    .shop-link-button{
+        width: 45vw;
+        min-width: 200px;
+    }
+}
+
+@media screen and (max-width:910px){
+    .shop-info-header-text.bigger-header{
+        font-size: 70px;
+    }
+
+    .shop-info-header-text.smaller-header{
+        font-size: 30px;
+    }
+
+    .shop-header-div{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .top-shop-div{
+        flex-direction: column;
+        align-items: center;
+        gap: 100px;
+        padding-top: 152px;
+    }
+
+    .final-sale-cap1{
+        font-size: 20px;
+    }
+
+    .final-sale-cap2{
+        font-size: 70px;
+    }
+
+    .final-sale-cap3{
+        font-size: 15px;
+    }
+
+    .shop-link-button{
+        width: 60vw;
+    }
+
+    .alt-cutout-picture{
+        width: 55vw;
+    }
+
+}
+
+@media screen and (max-width:744px){
+    .shop-link-button {
+        width: 85vw;
+    }
+
+    .alt-cutout-picture {
+        width: 75vw;
+    }
+
+    .shop-info-header-text.bigger-header{
+        font-size: 50px;
+    }
+
+    .shop-info-header-text.smaller-header{
+        font-size: 25px;
+    }
+
+    .shop-header-div{
+        gap: 40px;
+    }
+
+    .shop-link-div{
+        gap: 56px;
+    }
+
+    .cutout-image-wrapper{
+        margin-top: -112px;
+    }
+
+    .shop-info-para{
+        font-size: 20px;
+    }
+    .shop-info-para-bold {
+        font-size: 20px;
+    }
+
+    .shop-info-para-italic {
+        font-size: 20px;
+    }
+
+}
+
+
+@media screen and (max-width:635px){
+    .info-button-div{
+        flex-direction: column;
+    }
+
+    .shop-link{
+        align-self: flex-start;
+    }
+
+    .shop-info-header-text.bigger-header{
+        font-size: 75px;
+    }
+
+    .shop-info-header-text.smaller-header{
+        font-size: 30px;
+    }
+
+    .final-sale-cap1{
+        font-size: 14px;
+    }
+
+    .final-sale-cap2{
+        font-size: 50px;
+    }
+
+    .final-sale-cap3{
+        font-size: 10px;
+    }
+
+    .cloth-pile-image{
+        margin-top: -20px;
+    }
+
+    .shop-title-wrapper{
+        width: 75vw;
+    }
+
+    .top-shop-div{
+        padding-top: 112px;   
+    }
+    
+}
+
+@media screen and (max-width:520px){
+    .shop-info-header-text.bigger-header{
+        font-size: 65px;
+    }
+
+    .shop-info-header-text.smaller-header{
+        font-size: 25px;
+    }
+}
+
+@media screen and (max-width:465px){
+    .shop-info-header-text.bigger-header{
+        font-size: 50px;
+    }
+
+    .shop-info-header-text.smaller-header{
+        font-size: 20px;
+    }
+
+    .top-shop-div {
+        padding-top: 72px;
+    }
+
+    .photographer-tag {
+        width: 65vw;
+    }
+
+    .shop-link-button-text{
+        font-size: 20px;
+    }
+
+    .shop-link{
+        padding-top: 24px;
+    }
+}

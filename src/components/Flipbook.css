@@ -1,0 +1,24 @@
+.page-template {
+  /* ensure the page element is exactly the flip-book page size */
+  width: 100%;
+  height: 100%;
+  overflow: hidden;        /* hide any part of the image that spills out */
+  display: flex;           /* center the img if you want */
+  align-items: center;
+  justify-content: center;
+  background: white;
+}
+
+.page-template .page-image {
+  /* stretch to fill the container */
+  width: 100%;
+  height: 100%;
+
+  /* 
+    COVER: image fills fully, cropping where needed.
+    CONTAIN: image fully visible, letterboxed if aspect-ratios differ.
+  */
+  object-fit: cover;       /* or "contain" if you need the entire image visible */
+  object-position: center; /* center the image within the container */
+  display: block;          /* remove any inline-img whitespace */
+}

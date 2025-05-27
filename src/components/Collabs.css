@@ -1,0 +1,375 @@
+.collabs-page{
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    align-items: center;
+}
+
+.top-section{
+    margin-top: 230px;
+    width: 85vw;
+}
+
+.top-content-wrapper{
+    display: flex;
+    justify-content: space-around;
+}
+
+.collab-paragraph-container{
+    width: 32vw;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    margin-top: 80px;
+}
+
+.svg-image{
+    width: 45vw;
+}
+
+.svg-bracelet-tablet{
+    width: 0px;
+}
+.svg-bracelet{
+    width: 85vw;
+    height: auto;
+    display: block;
+    position: absolute;
+}
+
+.bracelet-svg-container{
+    width: 100%;
+    margin: 0 auto;
+}
+
+.content-container-div{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 100px;
+    height: fit-content;
+}
+
+.bottom-section{
+    padding-top: 450px;
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+}
+
+.view-archive-text-container{
+    align-self: flex-start;
+}
+
+.view-archive-svg{
+    margin-left:100px;
+    width: 28vw;
+}
+
+.horizontal-scroll-section-collab {
+    display: flex;
+    overflow-x: auto;
+    gap: 5px;
+    scroll-behavior: smooth;
+    width:99vw;
+    padding-top: 24px;
+    margin: 0 auto;
+    padding-bottom: 48px;
+    white-space: nowrap; /* Prevent wrapping */
+    margin-bottom: 112px;
+}
+
+.collab-container {
+    flex: 0 0 auto; /* Prevent shrinking, keep width */
+    width: 315px; /* Set a fixed width */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+}
+
+.collab-container img {
+    width: 100%;
+    height: 750px;
+}
+
+.mobile-tag-container{
+    display: none;
+}
+
+/* wrap the image + button */
+.hover-section-collab {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+  
+  /* smooth transition when darkening */
+  .hover-section-collab .collab-image {
+    display: block;
+    width: 100%;
+    height: 750px; /* or whatever you had */
+    transition: filter 0.3s ease-in-out;
+  }
+  
+  /* the “view” pill */
+  .hover-section-collab .collab-button {
+    color: #F5F5F5;
+    text-align: center;
+    font-family: "Bai Jamjuree";
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 400;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 180px;
+    padding: 25px 40px;
+    border-radius: 45px;
+    border: 2px solid #F5F5F5;
+    opacity: 0;
+    background: rgba(3, 3, 3, 0.5);
+    backdrop-filter: blur(12.95px);
+    transition: opacity 0.3s ease, background 0.3s ease;
+    cursor: pointer;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out, background-color 0.3s;
+  }
+  
+  /* darken on hover and show button */
+  .hover-section-collab:hover .collab-image {
+    filter: brightness(50%);
+  }
+  .hover-section-collab:hover .collab-button {
+    opacity: 1;
+    background: rgba(54, 69, 79, 0.5);
+  }
+  
+
+.horizontal-scroll-section-collab::-webkit-scrollbar {
+    height: 10px;
+    width: 95vw;
+}
+
+.horizontal-scroll-section-collab::-webkit-scrollbar-track {
+    background: rgb(160, 160, 160);
+    border-radius: 5px;
+}
+
+.horizontal-scroll-section-collab::-webkit-scrollbar-thumb {
+    background-color: rgb(0, 0, 0);
+    border-radius: 5px;
+}
+
+
+@media screen and (min-width:1800px) {
+    .bottom-section{
+        padding-top: 1450px;
+    }
+}
+
+@media screen and (max-width:1750px) {
+    .bottom-section{
+        padding-top: 700px;
+    }
+}
+
+@media screen and (max-width:1550px) {
+    .bottom-section{
+        padding-top: 450px;
+    }
+
+    .collab-caption{
+        font-size: 25px;
+    }
+}
+
+@media screen and (max-width:1450px) {
+    .bottom-section{
+        padding-top: 350px;
+    }
+}
+
+@media screen and (max-width: 1370px){
+    .collab-para-text{
+        font-size:20px;
+    }
+
+    .bottom-section{
+        padding-top: 500px;
+    }
+}
+
+@media screen and (max-width:1250px){
+    .bottom-section{
+        padding-top: 450px;
+    }
+}
+
+
+@media screen and (max-width:1200px){
+    .bottom-section{
+        padding-top: 350px;
+    }
+}
+
+@media screen and (max-width: 1110px){
+    .collab-para-text{
+        font-size:18px;
+    }
+
+    .bottom-section{
+        padding-top: 250px;
+    }
+
+    .collab-container{
+        width: 215px;
+    }
+
+    .collab-container img{
+        height: 512px;
+    }
+
+    .hover-section-collab .collab-image {
+        width: 100%;
+        height: 512px;
+    }
+
+    .collab-caption{
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 1000px){
+    .collab-para-text{
+        font-size:17px;
+    }
+
+    .collab-paragraph-container{
+        margin-top: 0px;
+    }
+
+    .bottom-section{
+        padding-top: 400px;
+    }
+}
+
+@media screen and (max-width: 900px){
+    .collab-para-text{
+        font-size:15px;
+    }
+
+    .collab-paragraph-container{
+        margin-top: 0px;
+    }
+
+    .bottom-section{
+        padding-top: 200px;
+    }
+
+}
+
+@media screen and (max-width: 816px){
+    .collab-para-text{
+        font-size:13px;
+    }
+
+    .collab-paragraph-container{
+        margin-top: 0px;
+    }
+
+    .bottom-section{
+        padding-top: 200px;
+    }
+
+}
+
+@media screen and (max-width: 744px){
+    .svg-bracelet{
+        display: none;
+    }
+
+    .svg-bracelet-tablet{
+        width: 100vw;
+        padding-top: 100px;
+    }
+
+    .top-section{
+        width: 100vw;
+        margin-top: 0px;
+    }
+
+    .top-content-wrapper{
+        flex-wrap: wrap;
+    }
+
+    .collab-paragraph-container{
+        width: 95vw;
+    }
+
+    .create-image-container{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .bottom-section{
+        padding-top: 10px;
+    }
+
+    .view-archive-svg{
+        width: 45vw;
+        margin-left: 20px;
+    }
+
+    .collab-para-text{
+        font-size: 20px;
+    }
+
+    .mobile-tag-container{
+        display: flex;
+        width: 95vw;
+        flex-wrap: wrap;
+        padding: 5px;
+        gap: 15px;
+        padding-top: 56px;
+    }
+
+    .collab-container{
+        width: 215px;
+    }
+
+    .collab-container img{
+        height: 512px;
+    }
+
+    .hover-section-collab .collab-image {
+        width: 100%;
+        height: 512px;
+    }
+
+    .svg-image{
+        margin-top: -100px;
+        padding-left: 30px;
+    }
+    
+}
+
+@media screen and (max-width: 600px){
+    .svg-bracelet-tablet{
+        padding-top: 50px;
+        padding-bottom: 48px;
+    }
+    .mobile-tag-container{
+        gap: 32px;
+    }
+
+    .view-archive-svg{
+        width: 55vw;
+    }
+
+    .bracelet-tag{
+        max-width: 370px;
+    }
+
+}

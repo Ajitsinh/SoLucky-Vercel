@@ -1,0 +1,100 @@
+.embedded-container {
+  width: 100%;
+  height: 100%;
+  background-color: #f7f7f7;
+  padding: 0px 40px;
+  padding-bottom: 20px;
+  box-sizing: border-box;
+  overflow-y: auto;
+}
+
+/* For WebKit browsers (Chrome, Safari, Edge) */
+.embedded-container::-webkit-scrollbar {
+  width: 12px;               /* thickness of vertical scrollbar */
+  height: 12px;              /* thickness of horizontal scrollbar */
+}
+
+.embedded-container::-webkit-scrollbar-track {
+  background: #e0e0e0;      /* track color */
+  border-radius: 5px;
+}
+
+.embedded-container::-webkit-scrollbar-thumb {
+  background-color: #555;   /* thumb (draggable handle) color */
+  border-radius: 5px;
+  border: 2px solid #e0e0e0;/* gives a little padding around thumb */
+}
+
+/* For Firefox */
+.embedded-container {
+  scrollbar-width:auto;                /* "auto" or "thin" */
+  scrollbar-color: #8E0000  #e0e0e0;        /* thumb color then track color */
+}
+
+
+
+.embedded-title {
+  color: #030303;
+  font-feature-settings: 'liga' off, 'clig' off;
+  font-family: "Bai Jamjuree", sans-serif;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 600;
+  letter-spacing: 0.355px;
+  margin-bottom: 10px;
+  text-align: start;
+}
+
+.embedded-subtitle {
+  color: #030303;
+  font-feature-settings: 'liga' off, 'clig' off;
+  font-family: "Bai Jamjuree", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  letter-spacing: 0.334px;
+  margin-bottom: 25px;
+  text-align: start;
+}
+
+.grid-wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  gap: 20px;
+}
+
+.photo-card {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.photo-thumb {
+  width: 100%;
+  aspect-ratio: 1;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.photo-title {
+  color: #030303;
+  font-feature-settings: 'liga' off, 'clig' off;
+  font-family: "Bai Jamjuree", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  letter-spacing: -0.228px;
+  text-transform: capitalize;
+  text-align: start;
+}
+
+.photo-issue {
+  color: rgba(3, 3, 3, 0.50);
+  font-feature-settings: 'liga' off, 'clig' off;
+  font-family: "Bai Jamjuree", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: -0.251px;
+  text-align: start;
+}

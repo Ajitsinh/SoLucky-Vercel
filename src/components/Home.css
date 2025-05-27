@@ -1,0 +1,399 @@
+.hero-section-home {
+  width: 100%;
+  height: fit-content;
+  min-height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.hero-image-wrapper {
+position: relative;
+width: 100vw;
+aspect-ratio: 16 / 9; /* adjust to match SVG proportions */
+margin-top: 240px;
+}
+
+.hero-bg-image {
+width: 100%;
+height: 100%;
+object-fit: contain;
+display: block;
+}
+
+.tv-video-overlay {
+position: absolute;
+  top: 58.5%;
+  left: 66.5%;
+  width: 17.5%;
+  height: 23.5%;
+  z-index: 1;
+  border-radius: 6px;
+  overflow: hidden;
+  transform: rotate(3deg);
+  transform-origin: center;
+}
+
+.tv-video-overlay video {
+width: 100%;
+height: 100%;
+object-fit: cover;
+}
+
+
+.hero-text {
+  font-family: serif;
+  color: #030303;
+  font-size: clamp(2.5rem, 6vw, 5rem);
+  text-align: center;
+}
+.hero-text em {
+  font-style: italic;
+}
+
+/* ——— Scrolling Strip ——— */
+.strip-section {
+width: 100%;
+background: #f5f5f5;
+}
+.strip-container {
+overflow: hidden;
+}
+
+.strip-text-item{
+  margin-right: 1.5rem;
+}
+.strip-separator {
+  margin-right: 1.5rem;    /* space after each icon */
+}
+
+.strip-content {
+display: inline-block;
+white-space: nowrap;
+animation: scroll-left 20s linear infinite;
+color: #030303;
+text-align: center;
+font-family: "Bai Jamjuree", sans-serif;
+font-size: 18px;
+font-style: normal;
+font-weight: 500;
+line-height: 100%; /* 18px */
+letter-spacing: 1.5px;
+text-transform: uppercase;
+padding: 0.75rem 0;
+}
+
+@keyframes scroll-left {
+  from   { transform: translateX(0);    }
+  to     { transform: translateX(-100%); }
+}
+
+@keyframes scroll-left {
+0%   { transform: translateX(0); }
+100% { transform: translateX(-50%); }
+}
+
+/* ——— What’s New Section ——— */
+.whats-new-section {
+display: flex;
+justify-content: space-around;
+gap: 4rem;
+background: #030303;
+color: #f5f5f5;
+padding: 7rem 2rem;
+}
+
+
+.whats-new-left{
+  text-align: end;
+  display: flex;
+  flex-direction: column;
+  min-width: auto;
+}
+
+.whats-new-right{
+  text-align: start;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 535px;
+}
+
+/* —— 7 cards laid out in a row, wrapping on small screens —— */
+/* container layout you already have */
+.cards-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 0px;
+  padding: 0rem 1rem;
+  padding-bottom: 10rem;
+  background: #030303;
+}
+/* set up 3D perspective on each card */
+.card {
+  perspective: 1000px;
+  width: 148px;
+  height: 219px;
+}
+
+/* the “flippable” wrapper */
+.card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: transform 0.6s ease;
+}
+
+/* on hover, rotate the inner wrapper 180° */
+.card:hover .card-inner {
+  transform: rotateY(180deg);
+}
+
+/* both faces occupy the same space */
+.card-face {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+}
+
+/* back side stays unrotated */
+.card-back {
+  transform: rotateY(0deg);
+}
+
+/* front side is initially hidden by a 180° rotation */
+.card-front {
+  transform: rotateY(180deg);
+}
+
+/* make sure images fill their face */
+.card-face img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.flipbook-section {
+  display: flex;
+  flex-direction: column;
+  background: black;
+  align-items: center;
+}
+
+.flipbook-canvas {
+  width: 100%;
+  max-width: 1500px;       /* limits size on big screens */
+  padding: 2rem;
+  margin: 0 auto;         /* center horizontally */
+  box-sizing: border-box;
+}
+
+.flipbook-arrow-container{
+  width:80vw;
+  padding-bottom: 40px;
+  max-width: 1600px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.spotify-playlist-section{
+  background-color: #030303;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.spotify-pointer-container{
+  text-align: left;
+  padding-bottom: 48px;
+}
+
+.playlist-container{
+  width: 95%;
+}
+
+.arrow-image-1{
+  width: 20vw;
+}
+
+.arrow-image-2{
+  width: 30vw;
+}
+
+
+
+@media screen and (max-width: 1700px){
+  .whats-new-title{
+    font-size:130px;
+  }
+  .whats-new-subtitle{
+    font-size: 90px;
+  }
+
+  .whats-new-tagline{
+    font-size: 55px;
+  }
+}
+
+  @media screen and (max-width: 1512px){
+  .whats-new-title{
+    font-size:115px;
+  }
+  .whats-new-subtitle{
+    font-size: 70px;
+  }
+
+  .whats-new-tagline{
+    font-size: 45px;
+  }
+
+  .paragraph-message-home{
+    font-size: 23px;
+  }
+}
+
+@media screen and (max-width: 1440px) {
+  .hero-text {
+    font-size: clamp(2rem, 5vw, 4rem);
+  }
+}
+
+  @media screen and (max-width: 1330px){
+  .whats-new-title{
+    font-size:95px;
+  }
+  .whats-new-subtitle{
+    font-size: 60px;
+  }
+
+  .whats-new-tagline{
+    font-size: 40px;
+  }
+
+  .paragraph-message-home{
+    font-size: 22px;
+  }
+
+  .whats-new-right{
+    max-width: 450px;
+  }
+}
+
+@media screen and (max-width: 1259px){
+  .flipbook-arrow-container{
+    padding-bottom: 0px;
+  }
+
+  .arrow-image-1{
+    width: 25vw;
+  }
+}
+
+    @media screen and (max-width: 1170px){
+  .whats-new-title{
+    font-size:85px;
+  }
+  .whats-new-subtitle{
+    font-size: 50px;
+  }
+
+  .whats-new-tagline{
+    font-size: 35px;
+  }
+
+  .paragraph-message-home{
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 1060px){
+  .whats-new-section{
+    flex-direction: column;
+  }
+
+  .whats-new-left,
+  .whats-new-right {
+    flex:none;
+    max-width: none;
+  }
+
+  .paragraph-message-home {
+      font-size: 25px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .hero-image-wrapper{
+    margin-top: 100px;
+  }
+}
+
+@media screen and (max-width: 545px) {
+  .whats-new-title{
+    font-size:75px;
+  }
+  .whats-new-subtitle{
+    font-size: 45px;
+  }
+
+  .whats-new-tagline{
+    font-size: 30px;
+  }
+
+  .arrow-image-1{
+    width: 30vw;
+  }
+
+  .flipbook-canvas {
+    padding: 1rem;        /* a bit more breathing room on tiny screens */
+  }
+  
+}
+
+@media screen and (max-width: 465px) {
+  .whats-new-title{
+    font-size:65px;
+  }
+  .whats-new-subtitle{
+    font-size: 40px;
+  }
+
+  .whats-new-tagline{
+    font-size: 25px;
+  }
+}
+
+
+/* Home.css */
+.loading-overlay {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100vw; height: 100vh;
+  background: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+.loading-video {
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+}
+/* optional: prevent scrolling while video plays */
+body.loading {
+  overflow: hidden;
+}
+

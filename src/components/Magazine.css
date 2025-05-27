@@ -1,0 +1,394 @@
+.info-text-container{
+    display: flex;
+    width: 80vw;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+}
+
+#text-box{
+    width: 40vw;
+    align-self: end;
+}
+
+.right-sticky-picture{
+    position: absolute;
+    right: 0;            /* always flush to the right edge */
+    width: 28vw;         /* or any value that scales (you could also use px) */
+    max-width: 988px;    /* cap it so it never gets too huge */
+    height: auto;
+    z-index: 0;   
+    top: 100px;
+}
+
+.solucky-magazine-svg{
+    width: 40vw;
+}
+
+.magazine-info-div{
+    padding-top: 255px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header-text-container{
+    text-align: left;
+    margin-right: -150px;
+}
+
+.top-text-container{
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+}
+
+
+.info-buttons-section{
+    position: relative;
+    width: 80vw;
+    margin: 0 auto;             /* center on larger screens */
+    padding: 160px 16px 140px;       /* horizontal gutters + bottom padding */
+    display: flex;              /* switch to flexbox */
+    flex-direction: column;
+    align-items: center;
+    gap: 32px; 
+}
+
+.buttons-container{
+    display: flex;
+    flex-wrap: wrap;            /* wrap onto new lines on narrow screens */
+    gap: 26px;                  /* gutter between buttons */
+    width: 100%;
+}
+ 
+.buttons-container a button {
+    width: 394px;                /* button now spans the full flex item */
+}
+
+.magazine-button{
+    padding: 22px 35px;
+    width: 394px;
+    height: 102px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 35px;
+    background: black;
+    cursor: pointer;
+}
+
+.button-arrow{
+    width: 30px;
+    height: 30px;
+}
+
+.pointer-text-image{
+    position: absolute;
+    top: 24px;
+    left: 55%;
+    transform: translate(80%, 3%);
+    width: 100%;
+    max-width: 352px;
+    height: auto;
+    pointer-events: none;
+}
+
+.alt-pointer-div{
+    display: none;
+}
+
+.cover-hover-section {
+    display: flex;
+    flex-wrap: wrap;            /* allow wrapping to next row */
+    justify-content: center;
+    gap: 24px;                  /* gutter between covers */
+    width: 95vw;         /* same as your other sections */
+    margin: 0 auto;             /* center container in the viewport */
+    padding-bottom: 200px;
+    margin-top: -46px;
+  }
+  
+  .cover-box {
+    flex: 0 0 auto;             /* don’t stretch or shrink */
+    width: 326px;
+    height: 422px;
+    position: relative;
+    margin-top: 17px;
+  }
+  
+
+.magazine-page{
+    position: relative;  /* establishes a containing block for absolute kids */
+    width: 100%;
+    overflow-x: hidden;
+    padding-top: 120px;
+}
+
+.magazine-picture{
+    position: absolute;     /* stack them */
+    top: 0;                 /* pin to top */
+    left: 0;                /* pin to left */
+    width: 100%;            /* fill the cover-box */
+    height: 100%;
+    object-fit: cover;
+    transition: opacity 0.3s ease;
+    opacity: 1;
+}
+
+.hover-picture{
+    position: absolute;     /* stack them */
+    top: 0;                 /* pin to top */
+    left: 0;                /* pin to left */
+    width: 100%;            /* fill the cover-box */
+    height: 100%;
+    object-fit: cover;
+    transition: opacity 0.3s ease;
+    opacity: 0;
+}
+
+.cover-box:hover .magazine-picture{
+    opacity: 0;
+}
+
+.cover-box:hover .hover-picture{
+    opacity: 1;
+}
+
+#next-issue-gif {
+    overflow: hidden; /* keep it inside the box */
+}
+  
+.paper-gif-frame {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    margin-top:25px;
+}
+
+.pdf-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.85);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.pdf-content {
+  position: relative;
+  width: 90%;
+  height: 90%;
+  background: white;
+  box-shadow: 0 0 20px rgba(0,0,0,0.4);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  z-index: 10;
+  background: transparent;
+  border: none;
+  font-size: 2rem;
+  color: black;
+  cursor: pointer;
+}
+
+
+@media screen and (max-width: 1880px){
+    .right-sticky-picture{
+        top: 320px;
+    }
+
+    .solucky-magazine-svg{
+        width: 50vw;
+    }
+}
+
+@media screen and (max-width: 1580px){
+    .magazine-para-text{
+        font-size: 24px;
+    }
+}
+
+@media screen and (max-width: 1512px){
+    .magazine-para-text{
+        font-size: 23px;
+    }
+
+    .centered-p-bai-jamjuree {
+        font-size: 25px;
+    }
+
+    .buttons-container a button {
+        width: 345px;
+    }
+}
+
+@media screen and (max-width: 1460px){
+    .magazine-para-text{
+        font-size: 22px;
+    }
+}
+
+
+@media screen and (max-width:1380px) {
+    .pointer-text-image{
+        display: none;
+    }
+
+    .alt-pointer-div{
+        display: flex;
+        width: 95vw;
+        padding-left: 100px;
+    }
+
+    .magazine-para-text{
+        font-size: 21px;
+    }
+
+    .cover-hover-section{
+        gap: 16px;
+        width: 100vw;
+    }
+}
+
+@media screen and (max-width:1300px){
+    .magazine-para-text{
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width:1260px){
+    .magazine-para-text{
+        font-size: 19px;
+    }
+}
+
+@media screen and (max-width:1200px){
+    .magazine-para-text{
+        font-size: 18px;
+    }
+
+    .buttons-container{
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width:1170px){
+    .top-text-container{
+        gap: 50px;
+    }
+    .magazine-para-text{
+        font-size: 17px;
+    }
+
+}
+
+@media screen and (max-width:1070px){
+    .magazine-para-text{
+        font-size: 15px;
+    }
+
+    .magazine-info-div {
+        padding-top: 168px;
+    }
+
+    .right-sticky-picture {
+        top: 248px;
+    }
+
+    .centered-p-bai-jamjuree {
+        font-size: 20px;
+    }
+
+    .buttons-container a button {
+        width: 300px;
+    }
+
+}
+
+@media screen and (max-width:970px){
+    .magazine-para-text{
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width:900px){
+    .magazine-para-text{
+        font-size: 20px;
+    }
+
+    #text-box{
+        width: 80vw;
+    }
+
+    .top-text-container{
+        flex-direction: column;
+    }
+
+    .solucky-magazine-svg{
+        width: 40vw;
+    }
+
+    .right-sticky-picture{
+        width: 41vw;
+        top: 200px;
+    }
+}
+
+@media screen and (max-width:744px){
+    .right-sticky-picture {
+        width: 45vw;
+        top: 200px;
+    }
+
+    .info-text-container{
+        padding-top: 0px;
+    }
+
+    .info-buttons-section{
+        padding-top: 112px;
+    }
+}
+
+
+@media screen and (max-width:600px){
+    .right-sticky-picture {
+        width: 65vw;
+        top: 156px;
+    }
+
+    .solucky-magazine-svg{
+        width: 60vw;
+    }
+
+    .info-text-container{
+        padding-top: 112px;
+    }
+
+    .cover-box{
+        width: 185px;
+        height: 239px;
+    }
+    .cover-hover-section{
+        gap: 12px;
+        padding-bottom: 112px;
+    }
+
+    .info-buttons-section {
+        padding-top: 88px;
+        padding-bottom: 124px;
+    }
+}

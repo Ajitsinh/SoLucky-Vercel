@@ -1,0 +1,304 @@
+.events-page{
+    background: black;
+}
+
+.landing-section{
+    width: 100%;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.stay-tuned-alt{
+    width: 0px;
+}
+
+.iphone-paragraph-container{
+    display: flex;
+    flex-direction: row;
+    padding-top: 330px;
+    margin: 20px;
+    max-width: 1600px;
+    width: 100%;
+    height: auto;
+    justify-content: space-between;
+    padding-bottom: 100px;
+}
+
+
+.para-text-container{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-right: 50px;
+}
+
+.iphone-container{
+    padding-left: 100px;
+}
+
+.moving-strip{
+    display: flex;
+    padding: 33px 160px;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 10px;
+    background: #FF6265;
+}
+
+.events-section{
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+    padding-bottom: 22px;
+}
+
+.hover-section {
+    position: relative; 
+    display: flex;
+}
+  
+/* Make the image responsive */
+.hover-section .event-background {
+    width: 100%;
+    height: auto;
+}
+
+.event-picture{
+    margin-top: -6px;
+    width: 100%;
+    transition: filter 0.3s ease-in-out;
+}
+
+/* Style the button and place it in the middle of the container/image */
+.hover-section .gallery-button {
+    position: absolute;
+    top: 50%;               /* 50% down from the top of .hover-section */
+    left: 50%;              /* 50% in from the left of .hover-section */
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 180px;
+    gap: 10px;
+    border-radius: 45px;
+    border: 2px solid #F5F5F5;
+    opacity: 0;
+    background: rgba(3, 3, 3, 0.5);
+    backdrop-filter: blur(12.95px);
+    transition: opacity 0.3s ease, background 0.3s ease;
+    cursor: pointer;
+}
+
+.hover-section:hover .gallery-button{
+    opacity: 1;
+    background: rgba(54, 69, 79, 0.5);
+}
+
+.hover-section:hover .event-picture {
+    filter: brightness(50%); /* Darkens the image by reducing brightness */
+}
+
+.stay-tuned-text{
+    margin-top: 50px;
+    margin-left: -100px;
+}
+
+.the-art-of-text{
+    margin-bottom: -50px;
+    margin-left: 20px;
+}
+
+.iphone-pic{
+    margin-top: 90px;
+    width: 550px;
+}
+
+.events-media-tablet-text{
+    padding: 40px;
+}
+
+.events-media-mobile-container{
+    display: none;
+}
+
+@media screen and (max-width: 1512px) {
+    /* tighten up the top‐section padding */
+    .iphone-paragraph-container {
+      padding-top: 280px;
+      padding-bottom: 80px;
+    }
+  
+    /* let each column shrink a little before wrapping */
+    .iphone-container,
+    .para-text-container {
+      flex: 1 1 45%;
+      justify-content: center
+    }
+
+    .iphone-container{
+        padding-left: 20px;
+    }
+
+    .para-text-container{
+        padding-right: 0px;
+    }
+  
+    .para-text-container{
+        padding-right:50px ;
+    }
+
+    /* shrink & reposition the phone */
+    .iphone-pic {
+      max-width: 80%;
+      margin-top: 20px;
+    }
+  
+    /* shrink & reposition the “the art of” graphic */
+    .the-art-of-text {
+        max-width: 19rem;
+        margin-left: 10px;
+        margin-bottom: -35px;
+    }
+  
+    /* scale down the big header word */
+    .events-header-text {
+      font-size: 5.5rem;    /* adjust this to match your base rem scale */
+    }
+  
+    /* scale down the body copy */
+    .events-para-text {
+      font-size: 25px;
+      line-height: 1.6;
+    }
+  
+    /* shrink & reposition the “stay-tuned” arrow */
+    .stay-tuned-text {
+        max-width: 34.5rem;
+        margin-left: -30px;
+        margin-top: 20px;
+    }
+
+    .strip-text{
+        font-size: 25px;
+    }
+  }
+
+  @media screen and (max-width: 1250px){
+    .events-para-text{
+        font-size: 22px;
+    }
+
+    .iphone-pic{
+        margin-top: 80px;
+    }
+  }
+
+  @media screen and (max-width: 1080px){
+    .events-para-text{
+        font-size: 18px;
+    }
+  }
+
+  @media screen and (max-width: 944px){
+    .events-media-mobile-container{
+        display: flex;
+    }
+
+    .stay-tuned-text{
+        max-width: 0px;
+    }
+
+    .iphone-container{
+        padding-left: 0px;
+    }
+    .para-text-container{
+        padding: 20px;
+    }
+
+    .events-para-text{
+        align-self: center;
+        padding-left:15px;
+        padding-right:15px;
+    }
+
+    .iphone-paragraph-container{
+        flex-wrap: wrap-reverse;
+    }
+
+    .strip-text{
+        font-size: 20px;
+    }
+
+    .stay-tuned-alt{
+        width: 60%;
+        margin-left: -150px;
+        margin-bottom: -50px;
+    }
+
+    .iphone-pic{
+        margin-top: 0px;
+        margin-bottom: -50px
+    }
+
+    .events-header-text{
+        font-size: 4.5rem;
+        padding-left: 15px;
+    }
+
+    .the-art-of-text{
+        max-width: 15rem;
+        padding-left: 15px;
+    }
+
+    .iphone-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+  }
+
+  @media screen and (max-width: 944px){
+    .stay-tuned-alt{
+        margin-left: -100px;
+    }
+  }
+
+  @media screen and (max-width: 600px){
+    .events-header-text{
+        font-size: 64px;
+        padding:20px
+    }
+
+    .iphone-paragraph-container{
+        margin-left: 0px;
+        margin-right: 0px;
+        width: 100vw;
+        padding-top: 180px;
+    }
+    .para-text-container{
+        padding: 0px;
+    }
+    .events-para-text{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .moving-strip {
+        /* shrink side padding so there's more room for text */
+        padding: 20px 40px;
+      }
+    
+      .strip-text {
+        /* let the paragraph span the full width */
+        width: 100%;
+        max-width: none;
+        text-align: center;  /* optional: center the text */
+        line-height: normal;
+      }
+  }
+
+
+
+
+  

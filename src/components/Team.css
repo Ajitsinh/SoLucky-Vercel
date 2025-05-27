@@ -1,0 +1,718 @@
+.team-page {
+    overflow-x: hidden; /* Prevent horizontal overflow on the page */
+}
+
+.hero-section{
+    min-height: 1620px;
+    background-color: #F5F5F5;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    height: 100%;
+}
+
+.shoe-image{
+    width: 100vw;
+    position: absolute;
+    margin-top: 100px;
+}
+
+.team-members{
+    background-color: #F5F5F5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%; /* Ensure it spans the entire viewport width */
+    box-sizing: border-box; /* Include padding and borders in width calculations */
+}
+
+.hero-heading{
+    margin-top: 0px;
+    margin-bottom: 0px;
+    color: #030303;
+    text-align: right;
+    font-family: "PT Serif";
+    font-size: 180px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 185px;
+}
+
+.hero-title-container{
+    align-self: end;
+    width: fit-content;
+    margin-right: 400px;
+    padding: 20px;
+}
+
+.button-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 150px;
+    gap: 32px;
+}
+
+.buttons-wrapper{
+    display: flex;
+    width: 85.6vw;
+    justify-content: space-evenly;
+    align-items: stretch;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.button-caption{
+    width: 85.6vw;
+    text-align: end;
+}
+
+.button3{
+    height: 100%;
+}
+
+#view-bts-text{
+    width: 120px;
+}
+
+.volunteer-text{
+    width: 720px;
+    height: fit-content;
+    color: #030303;
+    text-align: justify;
+    font-family: "Bai Jamjuree";
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-bottom: 0px;
+    margin-left: 250px;
+    margin-top: 302px;
+    text-indent: 50px;
+}
+
+.caption-text{
+    color: #E13939;
+    font-family: "Oooh Baby";
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.arrow-icon{
+    width: 20vw;
+    margin-left: 4rem;
+}
+
+.shoe-caption{
+    width: fit-content;
+    margin-top: 180px;
+    margin-left: 200px;
+}
+
+.team-button{
+    padding: 22px 35px;
+    width: 394px;
+    height: 102px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 35px;
+    background: black;
+    cursor: pointer;
+}
+
+.team-button-arrow{
+    width: 30px;
+    height: 30px;
+}
+
+
+a{
+     text-decoration: none;
+ }
+
+.main-team-card{
+    margin-top:100px;
+    display: flex;
+    width: 95vw;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 100px;
+}
+
+.team-operations-title{
+    color: #030303;
+    text-align: center;
+    font-family: "PT Serif";
+    font-size: 65px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+.team-operations-title-caption{
+    color: #030303;
+    font-family: "Bai Jamjuree";
+    font-size: 35px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: 0px;
+}
+.instagram-caption{
+    padding-top: 100px;
+    padding-bottom: 36px;
+}
+
+.team-position-title{
+    color: #030303;
+    font-family: "Bai Jamjuree";
+    font-size: 35px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: uppercase;
+    margin: 0px;
+}
+
+.post-div{
+    width: 375px;
+    height: 534px;
+    background-color: white;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+}
+
+.post-image{
+    width: 375px;
+    height: 375px;
+}
+
+.post-header{
+    height: 54px;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-left:10px;
+    padding-right:15px;
+}
+
+.post-left-group{
+    display: flex;
+    width: 114px;
+    height: 32px;
+    flex-shrink: 0;
+    align-items: center;
+    gap:5px;
+}
+.post-account-name{
+    color: #262626;
+    font-family: "SF Pro Text", sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 18px; /* 138.462% */
+    letter-spacing: 0px;
+}
+
+.post-bottom-div{
+    width: 346px;
+    height: 74.152px;
+    flex-shrink: 0;
+    align-self: center;
+    margin-top: 13px;
+    display: flex;
+    flex-direction: column;
+}
+.post-icons{
+    width: 345.363px;
+    height: 23.152px;
+    flex-shrink: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.post-icons-left-group{
+    display: flex;
+    gap:17.5px;
+}
+
+.post-text{
+    color: #262626;
+    font-family: "SF Pro Text", sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: 0px;
+    text-align: start;
+}
+
+.team-horizontal-scroll-section {
+    display: flex;
+    overflow-x: auto;
+    gap: 56px;
+    scroll-behavior: smooth;
+    width: 91.5vw;
+    padding: 34px 0;
+    margin: 0 auto;
+    white-space: nowrap;
+}
+
+.team-horizontal-scroll-section-noscroll{
+    display: flex;
+    gap:20px;
+    justify-content: center;
+}
+
+.team-horizontal-scroll-section::-webkit-scrollbar {
+    height: 10px;
+}
+
+.team-horizontal-scroll-section::-webkit-scrollbar-track {
+    background: rgb(160, 160, 160);
+    border-radius: 5px;
+}
+
+.team-horizontal-scroll-section::-webkit-scrollbar-thumb {
+    background-color: rgb(0, 0, 0);
+    border-radius: 5px;
+}
+
+.specific-position{
+    display: block;
+}
+
+.more-icon{
+    width: 14px;
+    height: 3px;
+}
+
+.solucky-icon{
+    height: 32px;
+    width: 32px;
+}
+
+.brand-operations{
+    margin-bottom: 114px;
+}
+
+.production{
+    margin-bottom: 114px;
+}
+
+.social-media{
+    margin-bottom: 114px;
+}
+
+.magazine-publishing{
+    margin-bottom: 114px;
+}
+
+.no-scroll{
+    justify-content: center;
+}
+
+.aesthetic-photographers{
+    margin-bottom: 100px;
+}
+
+.scroll-buttons{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+
+#social-media-category{
+    margin-bottom: 114px;
+}
+  
+.category-title {
+font-size: 24px;
+font-weight: bold;
+margin-bottom: 10px;
+text-align: center;
+}
+
+.scroll-left,
+.scroll-right {
+    all: unset; /* Resets all default styles */
+    height:26px;
+    width:43px;
+    background: #030303;
+    box-shadow: none; /* Removes any remaining shadow */
+    cursor: pointer; /* Reapply desired styles */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.scroll-left{
+    border-radius: 10px 5px 5px 10px;
+}
+
+.scroll-right{
+    border-radius: 5px 10px 10px 5px;
+}
+
+@media screen and (max-width: 1880px) {
+    .shoe-caption{
+        margin-top: 60px;
+        margin-left: 65px;
+    }
+
+    .hero-title-container{
+        margin-right: 125px;
+        margin-top: -10px;
+    }
+
+    .volunteer-text{
+        margin-left: 148px;
+    }
+
+    .shoe-image{
+        margin-top: 188px;
+    }
+}
+
+
+@media screen and (max-width: 1660px){
+    .volunteer-text {
+        margin-left: 150px;
+        font-size: 20px;
+    }
+
+    .shoe-caption {
+        margin-top: 6rem;
+        margin-left: 4rem;
+    }
+
+    .volunteer-text{
+        font-size: 25px;
+        width:45vw;
+    }
+
+    .shoe-image{
+        margin-top: 170px;
+    }
+}
+
+@media screen and (max-width: 1512px){
+    .apply-textbox.centered-p-bai-jamjuree{
+        font-size: 25px;
+    }
+
+    .main-team-card{
+        padding-bottom: 36px;
+    }
+
+    .team-button{
+        padding: 20px 30px;
+    }
+}
+
+@media screen and (max-width:1400px){
+    .shoe-caption{
+        margin-top: 8rem;
+        margin-left: 2rem;
+    }
+
+    .volunteer-text{
+        font-size: 22px;
+    }
+}
+
+@media screen and (max-width:1320px){
+    .hero-heading{
+        font-size: 157px;
+        line-height: 170px;
+    }
+
+    .team-button{
+        padding: 17.5px 26px;
+        width: 302px;
+    }
+
+    .apply-textbox.centered-p-bai-jamjuree{
+        font-size: 22px;
+    }
+
+    .team-button-arrow{
+        height: 27px;
+        width: 27px;
+    }
+
+    .main-team-card{
+        margin-top: 40px;
+        padding-bottom: 20px;
+    }
+
+    .volunteer-text{
+        margin-top: 265px;
+        margin-left: 100px;
+    }
+
+    .team-position-title{
+        font-size:30px ;
+    }
+}
+
+
+@media screen and (max-width: 1200px) {
+    .hero-heading{
+        font-size:100px;
+    }
+
+    .team-horizontal-scroll-section{
+        width: 95vw;
+    }
+
+    .volunteer-text{
+        font-size: 20px;
+    }
+
+    .shoe-caption{
+        margin-top: 5rem;
+        margin-left: -1rem;
+    }
+
+    .instagram-caption{
+        padding-top: 0px;
+    }
+
+    .main-team-card{
+        margin-top: 0px;
+    }
+
+    .caption-text{
+        font-size: 40px;
+    }
+}
+
+
+
+@media screen and (max-width:1080px){
+    .volunteer-text{
+        font-size:18px
+    }
+
+    .shoe-image{
+        margin-top: 225px;
+    }
+
+    .hero-heading{
+        font-size: 84px;
+        line-height: 100px;
+    }
+
+    .hero-section{
+        min-height: 1520px;
+    }
+
+    .team-position-title{
+        font-size: 25px;
+    }
+}
+
+@media screen and (max-width:900px){
+    .volunteer-text{
+        margin-top: 220px;
+    }
+
+    .caption-text{
+        font-size: 28px;
+    }
+
+    .buttons-wrapper{
+        width: 60vw;
+    }
+
+    .button-container{
+        margin-top: 112px;
+    }
+}
+
+
+
+@media screen and (max-width: 744px){
+    .shoe-image{
+        margin-top: 100px;
+    }
+    
+    .hero-section{
+        padding-top: 112px;
+    }
+
+    .hero-heading{
+        font-size: 60px;
+        line-height: 80px;
+    }
+
+    .hero-title-container{
+        margin-right: 0px;
+        margin-top: 20rem;
+        position: absolute;
+    }
+
+    .volunteer-text{
+        font-size: 20px;
+        margin-left: 0px;
+        align-self: center; 
+        position: absolute;
+        width: 95vw;
+        margin-top: 640px;
+    }
+
+    .caption-text{
+        font-size: 28px;
+    }
+
+    .shoe-caption{
+        position: absolute;
+        margin-top: 10rem;
+        margin-left: 6rem;
+    }
+
+    .arrow-icon{
+        margin: 0px;
+    }
+
+    .buttons-wrapper{
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 30px;
+    }
+
+    .button-container{
+        margin-top: 850px;
+    }
+
+    .button-caption{
+        align-self: end;
+        padding-right: 20px;
+    }
+
+    .main-team-card{
+        margin-top: -200px;
+        z-index: 99;
+    }
+
+    .arrow-icon{
+        width: 35vw;
+    }
+
+    .team-position-title{
+        font-size:28px;
+    }
+    .team-category{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .instagram-caption{
+        align-self: center;
+        width: 80vw;
+    }
+}
+
+
+@media screen and (max-width: 600px){
+    .hero-section{
+        min-height: 1420px;
+    }
+
+    .shoe-caption{
+        margin-top: 10rem;
+        margin-left: 3rem;
+    }
+
+    .arrow-icon{
+        width: 40vw;
+    }
+
+    .team-category{
+        margin-top: 150px;
+    }
+
+    .hero-heading{
+        line-height: 90px;
+    }
+
+    .brand-operations{
+        margin-bottom: 80px;
+    }
+    
+    .production{
+        margin-bottom: 80px;
+    }
+    
+    .social-media{
+        margin-bottom: 80px;
+    }
+    
+    .magazine-publishing{
+        margin-bottom: 80px;
+    }
+
+    .team-horizontal-scroll-section{
+        gap: 24px;
+    }
+}
+
+
+@media screen and (max-width:460px){
+    .hero-title-container{
+        margin-top: 15rem;
+    }
+
+    .volunteer-text{
+        margin-top: 550px;
+    }
+
+    .shoe-caption{
+        margin-top: 7rem;
+    }
+
+    .team-category{
+        margin-top: 0px;
+    }
+
+    #first-insta-section{
+        margin-top: 150px;
+    }
+
+    .scroll-left,
+    .scroll-right{
+        display: none;
+    }
+
+    .hero-section{
+        padding-top: 75px;
+    }
+
+    .button-caption{
+        width: 230px;
+    }
+
+    .team-button{
+        width: 305px;
+    }
+
+    #view-bts-text{
+        width: 305px;
+    }
+}
